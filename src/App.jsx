@@ -10,19 +10,22 @@ import Profile from "./pages/Profile";
 import Header from "./components/Header";
 import About from "./pages/About";
 import PrivateRoute from "./components/PrivateRoute";
+import Login from "./pages/Login";
+import Sign from "./pages/Sign";
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sign-in" element={<SingIn />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/register" element = {<Sign/>}/>
+          {/* <Route path="/sign-in" element={<SingIn />} />
           <Route path="/sign-up" element={<SingUp />} />
           <Route path="/about" element={<About />} />
           <Route element={<PrivateRoute />}>
             <Route path="/profile" element={<Profile />} />
-          </Route>
+          </Route> */}
         </Routes>
       </BrowserRouter>
     </>
