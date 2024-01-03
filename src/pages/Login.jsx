@@ -302,11 +302,12 @@ function Login() {
           <div className="row mt-4" style={{ fontSize: "1.3rem" }}>
             <div className="col-xs-12">
               <div className={`mb-4 mt-4 ${emailFocused ? "focused" : ""}`}>
-                <label htmlFor="formControlLgEmail" className="form-label fw-semibold">
+                <label htmlFor="formControlLgEmail" className="form-label ">
                   Email
                 </label>
                 <input
                   className="form-control form-control-lg"
+                  style={{padding : "0.5rem", textAlign : "center"}}
                   id="formControlLgEmail"
                   type="email"
                   value={email}
@@ -319,12 +320,13 @@ function Login() {
             </div>
             <div className="col-xs-12">
               <div className={`mb-4 ${passwordFocused ? "focused" : ""}`}>
-                <label htmlFor="formControlLgPassword" className="form-label fw-semibold">
+                <label htmlFor="formControlLgPassword" className="form-label ">
                   Password
                 </label>
                 <input
                   className="form-control form-control-lg"
                   id="formControlLgPassword"
+                  style={{padding : "0.5rem", textAlign : "center"}}
                   type={showPassword ? "text" : "password"}
                   value={password}
                   onChange={handlePasswordChange}
